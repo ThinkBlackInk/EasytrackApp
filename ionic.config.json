@@ -1,0 +1,8 @@
+{
+		"name": "us.easytrack.www",
+		"integrations": {
+			"cordova": {
+			}
+		},
+		"type": "custom"	
+}
