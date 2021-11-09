@@ -1,4 +1,7 @@
 {
-	"versionNumber": 1,
-	"baseLineGUID": "abbc48022c1546429e19ca8f6b20848b"
+	"versionNumber": 4,
+	"baseLineGUID": "abbc48022c1546429e19ca8f6b20848b",
+	"userName": "",
+	"channel": "",
+	"developerVersionNumber": "1.02"
 }
