@@ -53,7 +53,6 @@ function _phoneGapSettings() {
         "cordova-plugin-network-information": "npm",
         "cordova-plugin-dialogs": "npm",
         "cordova-plugin-splashscreen": "npm",
-        "cordova-plugin-alpha-wkwebview-file-xhrhttps://github.com/remoorejr/cordova-plugin-alpha-wkwebview-file-xhr.git": "git",
         "cordova-plugin-zip": "npm",
         "cordova-plugin-x-toast": "npm",
         "cordova-plugin-whitelist": "npm"

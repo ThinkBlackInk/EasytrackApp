@@ -162,7 +162,6 @@
 	<plugin name="cordova-plugin-splashscreen" source="npm" version="5.0.3" />
 		<!-- cordova-plugin-wkwebview-engine support -->
 	
-	<plugin name="cordova-plugin-alpha-wkwebview-file-xhr" spec="https://github.com/remoorejr/cordova-plugin-alpha-wkwebview-file-xhr.git" source="git" />
 	
 	<platform name = "ios">
 		<!-- this preference requires cordova-ios release 5.1.1, compliled code will not reference UIWebView -->
