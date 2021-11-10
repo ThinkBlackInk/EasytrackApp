@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="us.easytrack.www" version="0.0.1" versionCode="1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Student Adventures Easytrack</name>
+<widget id="com.studentadventures.org" version="0.0.1" versionCode="1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Student Adventures</name>
     <description>
-        An Alpha Anywhere Cordova App
+        Student Adventures Tour Portal
     </description>
     <author email="app@studentadventures.org" href="">
         Student Adventures
@@ -23,9 +23,9 @@
     <preference name="android-minSdkVersion" value="22" />
     <preference name="android-installLocation" value="internalOnly" />
 	<preference name="phonegap-version" value="cli-9.0.0" />
-	<preference name="EnableViewportScale" value="false" />
-	<preference name="MediaPlaybackRequiresUserAction" value="false" />
-	<preference name="AllowInlineMediaPlayback" value="true" />
+	<preference name="EnableViewportScale" value="true" />
+	<preference name="MediaPlaybackRequiresUserAction" value="true" />
+	<preference name="AllowInlineMediaPlayback" value="false" />
 	<preference name="TopActivityIndicator" value="gray" />
 	<preference name="BackupWebStorage" value="none" />
 	<preference name="iosPersistentFileLocation" value="Library" />
@@ -45,15 +45,15 @@
 	<preference name="AutoHideSplashScreen" value="true" />
 	<preference name="SplashScreenDelay" value="3000" />
 	<preference name="FadeSplashScreen" value="true" />
-	<preference name="FadeSplashScreenDuration" value="2" />
+	<preference name="FadeSplashScreenDuration" value="500" />
 	<preference name="ShowSplashScreenSpinner" value="true" />
 	<!-- Android only splash screen plugin options -->
 	<preference name="SplashMaintainAspectRatio" value="true" />
 	<preference name="SplashShowOnlyFirstTime" value="false" />
 	<preference name="SplashScreenSpinnerColor" value="white" />
 	<preference name="pgb-builder-version" value="2" />
-	<preference name="show-splash-screen-spinner" value="true" />
 	<preference name="splash-screen-duration" value="5000" />
+	<preference name="show-splash-screen-spinner" value="true" />
 	
     <icon src="resources/icon.png" />
 	<splash src="resources/splash.png" />
@@ -94,7 +94,6 @@
 	
 	  
 	<!-- Windows Phone 8 -->
-
 		<icon platform="winphone" src="resources/icon/windows-phone/icon-48.png" />
 		<icon platform="winphone" src="resources/icon/windows-phone/icon-tile-62.png" role="background" />
 		<!-- Windows Phone 8.1+ -->
@@ -106,11 +105,14 @@
 		<icon platform="winphone" src="resources/icon/windows-phone/square150x150logo.scale-100.png" width="150" height="150"/>
 		<icon platform="winphone" src="resources/icon/windows-phone/square150x150logo.scale-240.png" width="360" height="360"/>
 		<icon platform="winphone" src="resources/icon/windows-phone/square310x310logo.scale-100.png" width="310" height="310"/>
-
 	
 <!-- Launch images / splash screens -->
 	
 <!-- Android -->
+	<allow-intent href="mailto:*" />
+	<allow-intent href="geo:*" />
+	<allow-intent href="sms:*" />
+	<allow-intent href="tel:*" />
 	
 <!-- Android legacy -->
 	<splash platform="android" density="port-ldpi" src="resources/screen/android/screen-ldpi-portrait.png" />
@@ -126,13 +128,11 @@
 	<splash platform="android" density="land-mdpi" src="resources/screen/android/screen-mdpi-landscape.png"  />
 	<splash platform="android" density="land-ldpi" src="resources/screen/android/screen-ldpi-landscape.png"  />
 <!-- end Android legacy -->
-
 		
 <!-- Android 9 patch -->
 <!-- end Android 9 patch -->
    
 <!-- iOS -->
-
 <!-- iOS legacy -->
 <!-- end iOS Legacy -->
 		
@@ -144,7 +144,6 @@
 	<splash platform="ios" src="resources/screen/ios/Default@3x~universal~comany.png" />
 	<splash platform="ios" src="resources/screen/ios/Default@3x~universal~anycom.png" />
 <!-- end iOS storyboards -->
-
 	
 <!-- Windows 8 -->
 	<splash platform="winphone" src="resources/screen/windows-phone/screen-portrait.jpg" />
@@ -152,39 +151,37 @@
 	<splash platform="winphone" src="resources/screen/windows-phone/screen.scale-240.png" />
 	
     <access origin="*" />
-	<platform name="ios" />
-	<platform name="android" />
-	<plugin name="cordova-plugin-device" source="npm" version="2.0.3" />
+	<feature name="https://api.phonegap.com/1.0/notification" />
 	<plugin name="cordova-plugin-file" source="npm" version="4.3.3" />
-	<plugin name="cordova-plugin-file-transfer" source="npm" version="1.5.1" />
 	<plugin name="cordova-plugin-network-information" source="npm" version="2.0.2" />
-	<plugin name="cordova-plugin-dialogs" source="npm" version="2.0.2" />
 	<plugin name="cordova-plugin-splashscreen" source="npm" version="5.0.3" />
-		<!-- cordova-plugin-wkwebview-engine support -->
-	
-	
-	<platform name = "ios">
-		<!-- this preference requires cordova-ios release 5.1.1, compliled code will not reference UIWebView -->
-		<!-- Note: PhoneGap Build CLI-9.0.0 uses cordova-ios release 5.0.1, this preference is ignored by cordova-ios release 5.0.1 -->
-		<preference name="WKWebViewOnly" value="true" />
-	
-		<feature name="CDVWKWebViewEngine">
-  			<param name="ios-package" value="CDVWKWebViewEngine" />
-		</feature>
-	
-		<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
-	
-		<!--wkwebview-file-xhr options -->
-		<preference name="InterceptRemoteRequests" value="all" />
-		<preference name="NoS3Intercepts" value="true" />
-	
-		<!-- for Instant Update Support -->
-		<allow-navigation href="*" />
-	</platform>
-	
-	<!-- end cordova-plugin-wkwebview-engine support -->
+	<plugin name="cordova-plugin-whitelist" source="npm" version="1.3.3" />
+	<plugin name="cordova-plugin-device" source="npm" version="2.0.3" />
+	<plugin name="cordova-plugin-file-transfer" source="npm" version="1.5.1" />
+	<feature name="https://api.phonegap.com/1.0/geolocation" />
+	<plugin name="cordova-plugin-geolocation" source="npm" version="4.0.2" />
+	<!-- cordova-plugin-geolocation support -->
+		<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+  		  	<string>This app requires access to your location for recording location based information.</string>
+		</edit-config>
+	<!-- end cordova-plugin-geolocation support -->
 
+	
+	<feature name="https://api.phonegap.com/1.0/contacts" />
+	<feature name="https://api.phonegap.com/1.0/file" />
+	<feature name="https://api.phonegap.com/1.0/media" />
+	<feature name="https://api.phonegap.com/1.0/network" />
+	<plugin name="cordova-plugin-battery-status" source="npm" version="1.2.5" />
+	<plugin name="cordova-plugin-contacts" source="npm" version="2.3.1" />
+	<plugin name="cordova-plugin-device-motion" source="npm" version="2.0.0" />
+	<plugin name="cordova-plugin-device-orientation" source="npm" version="2.0.0" />
+	<plugin name="cordova-plugin-media" source="npm" version="3.0.1" />
+	<plugin name="cordova-plugin-dialogs" source="npm" version="2.0.2" />
+	<plugin name="de.appplant.cordova.plugin.printer" source="npm" />
+	<plugin name="cordova-plugin-x-socialsharing" source="npm" />
+	<plugin name="cordova-plugin-inappbrowser" source="npm" version="1.7.2" />
+	<platform name="android" />
+	<platform name="ios" />
 	<plugin name="cordova-plugin-zip" source="npm" version="3.1.0" />
 	<plugin name="cordova-plugin-x-toast" source="npm" version="2.6.0" />
-	<plugin name="cordova-plugin-whitelist" source="npm" version="1.3.3" />
 </widget>

@@ -1,8 +1,8 @@
 {
-	"name": "us.easytrack.www",
-	"displayName": "Student Adventures Easytrack",
+	"name": "com.studentadventures.org",
+	"displayName": "Student Adventures",
 	"version": "0.0.1",
-	"description": "An Alpha Anywhere Cordova App",
+	"description": "Student Adventures Tour Portal",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"

@@ -1,12 +1,12 @@
 function _instantUpdateSettings() {
 return {
-	"baseLineGUID": "abbc48022c1546429e19ca8f6b20848b",
-	"baseURL": "http://phonegapinstantupdate.s3.amazonaws.com/",
+	"baseLineGUID": "5e50a9ee9e4349f6b044f921c6b22f75",
+	"baseURL": "https://phonegapinstantupdate.s3.amazonaws.com/",
 	"displayMessageAfterUpdate": false,
 	"message": "",
 	"systemMessages": "Verbose",
 	"autoUpdate": true,
 	"displayFirstTimeLoadMessage": true,
-	"firstTimeRunMessage": ""
+	"firstTimeRunMessage": "Please wait while the app is prepared for first-time use."
 };
 }
