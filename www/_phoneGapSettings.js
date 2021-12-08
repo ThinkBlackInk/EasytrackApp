@@ -1,6 +1,6 @@
 function _phoneGapSettings() { 
  return {
-    "appId": "com.studentadventures.org",
+    "appId": "us.easytrack.www",
     "preferences": {
         "permissions": "",
         "orientation": "default",
@@ -17,9 +17,9 @@ function _phoneGapSettings() {
         "android-minSdkVersion": "22",
         "android-installLocation": "internalOnly",
         "phonegap-version": "cli-9.0.0",
-        "EnableViewportScale": "true",
-        "MediaPlaybackRequiresUserAction": "true",
-        "AllowInlineMediaPlayback": "false",
+        "EnableViewportScale": "false",
+        "MediaPlaybackRequiresUserAction": "false",
+        "AllowInlineMediaPlayback": "true",
         "TopActivityIndicator": "gray",
         "BackupWebStorage": "none",
         "iosPersistentFileLocation": "Library",
@@ -37,34 +37,25 @@ function _phoneGapSettings() {
         "AutoHideSplashScreen": "true",
         "SplashScreenDelay": "3000",
         "FadeSplashScreen": "true",
-        "FadeSplashScreenDuration": "500",
+        "FadeSplashScreenDuration": "2",
         "ShowSplashScreenSpinner": "true",
         "SplashMaintainAspectRatio": "true",
         "SplashShowOnlyFirstTime": "false",
         "SplashScreenSpinnerColor": "white",
         "pgb-builder-version": "2",
-        "splash-screen-duration": "5000",
-        "show-splash-screen-spinner": "true"
+        "show-splash-screen-spinner": "true",
+        "splash-screen-duration": "5000"
     },
     "plugins": {
-        "cordova-plugin-file": "npm",
-        "cordova-plugin-network-information": "npm",
-        "cordova-plugin-splashscreen": "npm",
-        "cordova-plugin-whitelist": "npm",
         "cordova-plugin-device": "npm",
+        "cordova-plugin-file": "npm",
         "cordova-plugin-file-transfer": "npm",
-        "cordova-plugin-geolocation": "npm",
-        "cordova-plugin-battery-status": "npm",
-        "cordova-plugin-contacts": "npm",
-        "cordova-plugin-device-motion": "npm",
-        "cordova-plugin-device-orientation": "npm",
-        "cordova-plugin-media": "npm",
+        "cordova-plugin-network-information": "npm",
         "cordova-plugin-dialogs": "npm",
-        "de.appplant.cordova.plugin.printer": "npm",
-        "cordova-plugin-x-socialsharing": "npm",
-        "cordova-plugin-inappbrowser": "npm",
+        "cordova-plugin-splashscreen": "npm",
         "cordova-plugin-zip": "npm",
-        "cordova-plugin-x-toast": "npm"
+        "cordova-plugin-x-toast": "npm",
+        "cordova-plugin-whitelist": "npm"
     }
 };
 }
