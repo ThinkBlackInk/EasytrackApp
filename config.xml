@@ -152,7 +152,6 @@
 	<splash platform="winphone" src="resources/screen/windows-phone/screen.scale-240.png" />
 	
     <access origin="*" />
-	<platform name="ios" />
 	<platform name="android" />
 	<plugin name="cordova-plugin-device" source="npm" version="2.0.3" />
 	<plugin name="cordova-plugin-file" source="npm" version="4.3.3" />
